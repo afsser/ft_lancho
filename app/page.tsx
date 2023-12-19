@@ -9,7 +9,7 @@ import { Button } from "../components/ui/button"
 
 export default function v0() {
   return (
-    <div className="flex flex-col min-h-screen text-gray-300 bg-gradient-to-b from-upperColor to-lightUniverse">
+    <div className="flex flex-col min-h-screen text-gray-300 bg-gradient-to-b from-black to-lightUniverse">
       <nav className="bg-slate-800 p-4">
         <header className="mx-auto flex items-center justify-between">
         <a href="https://ft-lancho.vercel.app/">
@@ -29,19 +29,21 @@ export default function v0() {
           </div>
         </header>
       </nav>
-      <main className="flex-grow mx-auto max-w-6xl flex-col justify-center bg-gradient-to-b from-black to-darkUniverse">
-        <img
-          alt="ft_lanches"
-          className="w-full"
-          height={400}
-          src="/ft_lanches.jpg"
-          style={{
-            aspectRatio: "800/400",
-            objectFit: "cover",
-          }}
-          width={800}
-        />
-        <div className="relative">
+      <main className="flex-grow mx-auto max-w-6xl flex-col justify-center">
+        <div>
+          <img
+            alt="ft_lanches"
+            className="w-full"
+            height={400}
+            src="/ft_lanches.jpg"
+            style={{
+              aspectRatio: "800/400",
+              objectFit: "cover",
+            }}
+            width={800}
+          />
+        </div>
+        <div className="relative bg-gradient-to-b from-black to-lightUniverse">
           {/* <img
             alt="background"
             className="w-full h-full"
