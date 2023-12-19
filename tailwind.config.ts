@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        darkUniverse: {
+          DEFAULT: 'rgb(110, 110, 180)',
+        },
+        lightUniverse: {
+          DEFAULT: 'rgb(65, 81, 104)',
+        },
+        upperColor: {
+          DEFAULT: 'rgb(20, 20, 30)',
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

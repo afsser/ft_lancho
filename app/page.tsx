@@ -9,7 +9,7 @@ import { Button } from "../components/ui/button"
 
 export default function v0() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-300">
+    <div className="flex flex-col min-h-screen text-gray-300 bg-gradient-to-b from-upperColor to-lightUniverse">
       <nav className="bg-slate-800 p-4">
         <header className="mx-auto flex items-center justify-between">
         <a href="https://ft-lancho.vercel.app/">
@@ -29,7 +29,7 @@ export default function v0() {
           </div>
         </header>
       </nav>
-      <main className="flex-grow mx-auto max-w-6xl flex-col justify-center">
+      <main className="flex-grow mx-auto max-w-6xl flex-col justify-center bg-gradient-to-b from-black to-darkUniverse">
         <img
           alt="ft_lanches"
           className="w-full"
@@ -53,33 +53,30 @@ export default function v0() {
             }}
             width={800}
           /> */}
-          <div className="p-4 h-full flex flex-col justify-center items-center text-center space-y-4 bg-black bg-opacity-50">
-            <p className="lg:text-5xl md:text-4xl sm:text-2xl text-slate-300">
-              Ajude-nos a garantir que todos os cadetes da 42SP possam se alimentar adequadamente!
+          <div className="p-4 h-full flex flex-col justify-center items-center text-center text-cyan-50 space-y-4 bg-black bg-opacity-50">
+            <p className="lg:text-5xl md:text-4xl sm:text-2xl">
+              Estudamos em uma escola de engenharia de software totalmente gratuita e presencial,
+              cujo objetivo é diversificar o cenário da tecnologia.
             </p>
-            <p className="lg:text-4xl md:text-3xl sm:text-base text-slate-300">
-              A 42 São Paulo é uma escola de engenharia de software gratuita e presencial, comprometida em promover
-              diversidade no cenário tecnológico. No entanto, identificamos que alguns cadetes enfrentam dificuldades
-              financeiras para fazer todas as refeições necessárias durante o dia no campus. Para solucionar esse
-              problema, um grupo de cadetes decidiu agir!
+            <p className="lg:text-4xl md:text-3xl sm:text-base">
+              Recentemente, um grupo de alunos consultou a comunidade e percebeu que alguns colegas,
+              apesar de receberem bolsas da instituição, ainda enfrentam dificuldades financeiras
+              para se alimentar quando estão no campus.
             </p>
-            <p className="lg:text-4xl md:text-3xl sm:text-base text-slate-300">
-              A Carol (@anacaro3) estabeleceu uma parceria com um restaurante próximo à 42SP onde os participantes do
-              programa ft_lanches poderão desfrutar das refeições oferecidas. E é aqui que você entra! Ao apoiar nosso
-              projeto, você contribuirá para garantir que todos os cadetes tenham acesso às suas refeições diárias.
+            <p className="lg:text-4xl md:text-3xl sm:text-base">
+              Isso tem levado muitos deles a não comerem ou a se alimentarem predominantemente com produtos industrializados.
             </p>
-            <p className="lg:text-4xl md:text-3xl sm:text-base text-slate-300">
-              Com sua ajuda, poderemos atender a quantidade necessária de alunos e fornecer transparência total sobre
-              como os fundos arrecadados são utilizados.
+            <p className="lg:text-4xl md:text-3xl sm:text-base">
+              Tomando uma ação prática para resolver o problema, estes alunos se juntaram para buscar uma solução.
             </p>
-            <p className="lg:text-4xl md:text-3xl sm:text-base text-slate-300">
-              Venha fazer parte dessa campanha e faça a diferença na vida dos nossos cadetes! Juntos podemos fortalecer
-              essa comunidade estudantil incrível!
+            <p className="lg:text-4xl md:text-3xl sm:text-base">
+              Fechamos uma parceria com um restaurante perto da escola em que os beneficiados pelo projeto ft_lanches
+              poderão fazer refeições e os apoiadores ficarão responsáveis por pagá-las ao final do mês.
             </p>
-            <p className="lg:text-5xl md:text-4xl sm:text-3xl text-slate-300">
+            <p className="lg:text-5xl md:text-4xl sm:text-3xl">
               Alimente o conhecimento - Apoie nossos Cadetes!
             </p>
-            <p className="mb-2 text-center lg:text-5xl md:text-4xl sm:text-3xl text-slate-300">
+            <p className="mb-2 text-center lg:text-5xl md:text-4xl sm:text-3xl">
               São 3 opções de assinatura:
             </p>
             <div className="grid grid-cols-3 gap-4 p-4">
@@ -101,17 +98,19 @@ export default function v0() {
             </div>
           </div>
         </div>
-        <img
-          alt="ft_lanche"
-          className="w-full"
-          height={400}
-          src="/plate.jpg"
-          style={{
-            aspectRatio: "450/400",
-            objectFit: "cover",
-          }}
-          width={800}
-        />
+        <div>
+          <img
+            alt="ft_lanche"
+            className="w-full"
+            height={400}
+            src="/plate.jpg"
+            style={{
+              aspectRatio: "450/400",
+              objectFit: "cover",
+            }}
+            width={800}
+          />
+        </div>
       </main>
       <footer className="bg-gray-800 p-4">
         <div className="container mx-auto text-center">
