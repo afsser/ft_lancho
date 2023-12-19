@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-
+import Link from 'next/link';
 import { Button } from "../components/ui/button"
 
 export default function v0() {
@@ -12,16 +12,18 @@ export default function v0() {
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-300">
       <nav className="bg-slate-800 p-4">
         <header className="mx-auto flex items-center justify-between">
-          <a href="#">
+        <a href="https://ft-lancho.vercel.app/">
             <div>
               <h1 className="text-xl font-semibold">ft_lanches | Nutrindo mentes</h1>
             </div>
           </a>
           <div className="flex space-x-4">
-            <Button className="text-2xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
-              doar
-            </Button>
-            <Button className="text-xl bg-blue-900 text-gray-300 hover:bg-blue-950" variant="secondary">
+            <Link href="https://benfeitoria.com/projeto/ftlanches" target='_blank'>
+              <Button className="text-2xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
+                doar
+              </Button>
+            </Link>
+            <Button className="text-2xl bg-blue-800 text-gray-300 hover:bg-blue-950" type="button">
               login
             </Button>
           </div>
@@ -81,15 +83,21 @@ export default function v0() {
               São 3 opções de assinatura:
             </p>
             <div className="grid grid-cols-3 gap-4 p-4">
-              <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
-                R$30/mês
-              </Button>
-              <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
+              <Link href="https://benfeitoria.com/projeto/ftlanches" target='_blank'>
+                <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
+                  R$30/mês
+                </Button>
+              </Link>
+              <Link href="https://benfeitoria.com/projeto/ftlanches" target='_blank'>
+                <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
                 R$90/mês
-              </Button>
-              <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
+                </Button>
+              </Link>
+              <Link href="https://benfeitoria.com/projeto/ftlanches" target='_blank'>
+                <Button className="mx-auto flex 4xl bg-pink-600 text-gray-300 hover:bg-pink-950" type="button">
                 R$150/mês
-              </Button>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -107,9 +115,11 @@ export default function v0() {
       </main>
       <footer className="bg-gray-800 p-4">
         <div className="container mx-auto text-center">
-          <Button className="mx-auto bg-gray-800 text-gray-300" type="button">
-            Conheça a 42 São Paulo
-          </Button>
+          <Link href="https://www.42sp.org.br" target='_blank'>
+            <Button className="mx-auto bg-pink-700 text-gray-300 hover:bg-pink-950 text-lg" type="button">
+              Conheça a 42 São Paulo
+            </Button>
+          </Link>
         </div>
       </footer>
     </div>
